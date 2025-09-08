@@ -1,0 +1,52 @@
+.app-container {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 30px;
+}
+
+.user-card {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  margin: 20px;
+}
+
+.form input {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.form button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.counter {
+  margin-top: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.counter button {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.reset {
+  margin-top: 10px;
+  background: crimson;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
