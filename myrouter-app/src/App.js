@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+/*import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/protected";
 import { useState } from "react";
 import App3 from "./context/contextApi";
 import App5 from "./components/tabledemo";
+import App10 from "./components/Redux";
 function App() {
   
   const [isAuth, setIsAuth] = useState(false);
@@ -29,8 +30,27 @@ function App() {
       </Routes>
       <App3 />
       <App5 />
+      <App10 />
     </div>
   );
 }
 
 export default App;
+*/
+
+
+import { CartProvider } from "./context/CartContext";
+import ProductList from "./components/Productlist";
+import Cart from "./components/Cart";
+
+export default function App() {
+  return (
+    <CartProvider>
+      <div style={{ padding: 20 }}>
+        <h1>Simple Cart using Context API</h1>
+        <ProductList />
+        <Cart />
+      </div>
+    </CartProvider>
+  );
+}

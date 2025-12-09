@@ -1,9 +1,9 @@
 import React, { createContext, useContext } from 'react';
 
-// 1. Create context
+
 const ThemeContext = createContext();
 
-// 2. Theme provider component
+
 function ThemeProvider({ children }) {
   const [theme, setTheme] = React.useState('light');
 
@@ -23,7 +23,7 @@ function ThemeProvider({ children }) {
   );
 }
 
-// 3. Custom hook to use theme
+
 function useTheme() {
   const context = useContext(ThemeContext);
   if (!context) {
@@ -32,7 +32,7 @@ function useTheme() {
   return context;
 }
 
-// 4. Component using context
+
 function Header() {
   const { theme, toggleTheme } = useTheme();
 
@@ -46,8 +46,8 @@ function Header() {
   );
 }
 
-// 5. App component
-function App() {
+
+function App3() {
   return (
     <ThemeProvider>
       <div className="app">
@@ -60,4 +60,4 @@ function App() {
   );
 }
 
-export default App;
+export default App3;

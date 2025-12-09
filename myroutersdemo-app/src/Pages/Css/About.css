@@ -1,0 +1,159 @@
+.about-page {
+  font-family: Poppins, sans-serif;
+  background: #f7f7f7;
+  padding-bottom: 40px;
+}
+
+/* Hero */
+.about-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #0d6efd, #6610f2);
+  color: #fff;
+}
+
+.about-hero h1 {
+  font-size: 38px;
+}
+
+.about-hero p {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  padding: 50px 40px;
+  gap: 35px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.about-text p {
+  color: #444;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.about-points li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Mission & Vision */
+.mv-section {
+  padding: 35px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.mv-box {
+  flex: 1;
+  max-width: 460px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mv-box h3 {
+  margin-bottom: 10px;
+}
+
+/* Stats */
+.stats-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 45px 10px;
+  background: #ffffff;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 18px;
+  margin: 10px;
+}
+
+.stat-card h2 {
+  color: #6610f2;
+  font-size: 35px;
+}
+
+.stat-card p {
+  color: #444;
+  font-size: 14px;
+}
+
+/* Why Choose Us */
+.choose-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.choose-us h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.choose-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.choose-card {
+  padding: 14px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.choose-card:hover {
+  transform: translateY(-4px);
+  background: #e3ecff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-content {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .mv-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
